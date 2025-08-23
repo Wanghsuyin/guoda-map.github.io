@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第一屆國民大會代表名錄（民國五十年）</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- Leaflet 地圖 -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+
+<div class="intro-box">
+<h2>第一屆國民大會代表名錄（民國五十年）</h2>
+<p>本名錄所記載者，為中華民國第一屆國民大會代表於民國五十年（西元1961年）時之在臺狀況...</p>
+</div>
+
+<h1>統計資料</h1>
+<div class="charts-row">
+  <div class="chart-container">
+    <h2>男女比例</h2>
+    <canvas id="genderChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h2>各省人數比例</h2>
+    <canvas id="provinceChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h2>年齡分布</h2>
+    <canvas id="ageChart"></canvas>
+  </div>
+</div>
+
+<h2>特殊個案</h2>
+<p id="oldest-person"></p>
+<p id="youngest-person"></p>
+
+<h2>人員列表</h2>
+<table id="peopleTable" class="display"></table>
+
+<h2>地圖</h2>
+<div id="map" style="height:600px;"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
